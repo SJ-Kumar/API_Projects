@@ -253,6 +253,39 @@ Care must be taken while caching APIs because not everything that can be cached 
 
 API keys, tokens, and other credentials can be a security hazard if cached improperly.
 
+REST and GraphQL APIs. What are the differences between them?
+
+1️⃣ Method to perform data operations
+
+With RESTful APIs, you have different HTTP methods to perform CRUD operations.
+
+Whereas with GraphQL, you use queries and mutations to perform data operations.
+
+2️⃣ Overfetching and under fetching
+
+With REST API, you either often fetch an unnecessary amount of data or fetch data in multiple API calls.
+
+With GraphQL, you only get the data that you have requested.
+
+3️⃣ Endpoints
+
+REST API leads to fetching different data from multiple endpoints.
+
+GraphQL provides a single endpoint from where you can read and manipulate data.
+
+4️⃣ Cache
+
+REST API leverages the caching feature. The different operations, like the GET, POST, etc., can be cached and stay in the browser history.
+
+GraphQL doesn't follow the HTTP specs and uses a single endpoint. It is up to developers to ensure that caching is implemented.
+
+5️⃣ Language
+
+REST API is an API type that lets you perform CRUD operations between client and server.
+
+GraphQL is a query language that allows you to read and mutate the data in APIs.
+
+
 
 
 
